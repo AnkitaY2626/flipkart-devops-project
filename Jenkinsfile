@@ -10,7 +10,7 @@ pipeline {
 
                 dir('backend') {
 
-                    bat 'docker build -t flipkart-backend .'
+                    sh 'docker build -t flipkart-backend .'
 
                 }
 
@@ -24,7 +24,7 @@ pipeline {
 
                 dir('frontend') {
 
-                    bat 'docker build -t flipkart-frontend .'
+                    sh 'docker build -t flipkart-frontend .'
 
                 }
 
